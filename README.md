@@ -6,8 +6,6 @@
 
 MVI架構與MVVM很相似，也可以MVI視為MVVM架構優化。與MVVM不同，MVVM強調UI與資料雙向綁定，而MVI則是強調單向流動。
 
-![MVI資料流程](./docs/mvi_architecture.png)
-
 
 ## 資料流程
 
@@ -21,11 +19,13 @@ MVI架構與MVVM很相似，也可以MVI視為MVVM架構優化。與MVVM不同�
 
 ## MVI組成
 
-4. Model: 與MVVM中的Model不同，MVI中的Model代表的是UI狀態(MVVM中的ViewModel)。
+1. Model: 與MVVM中的Model不同，MVI中的Model代表的是UI狀態(MVVM中的ViewModel)。
 
-5. View:用戶介面，在Android中Activity或Fragment都可以是View。與MVVM一樣MVI的View一樣都是透過訂閱方式來進行UI狀態變更。
+2. View:用戶介面，在Android中Activity或Fragment都可以是View。與MVVM一樣MVI的View一樣都是透過訂閱方式來進行UI狀態變更。
 
-6. Intent:非Android中的Intent，這邊Intent的指的示意圖，UI上的任意操作都包裝Intent後傳送給ViewModel。
+3. Intent:非Android中的Intent，這邊Intent的指的示意圖，UI上的任意操作都包裝Intent後傳送給ViewModel。
+
+![MVI資料流程](./docs/mvi_architecture.png)
 
 ## Example
 
